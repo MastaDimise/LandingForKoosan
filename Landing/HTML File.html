@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOOSAN | Премиум кардиган</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
     <style>
         /* Базовые стили */
         * {
@@ -601,14 +602,14 @@
                 font-size: 28px;
             }
         }
+
+
     </style>
 </head>
 <body>
 <!-- Шапка -->
 <header>
     <div class="container header-content">
-        <a href="#" class="logo">KOOSAN</a>
-
         <a href="#" class="cart-icon">
             <i class="fas fa-shopping-bag"></i>
             <span class="cart-count">1</span>
@@ -617,92 +618,105 @@
 </header>
 
 <!-- Главный блок товара -->
-<section class="hero-product" id="product">
+<section class="hero-product" id="product" style="background-color: white; text-align: center;">
     <div class="container">
-        <div class="product-container">
-            <!-- Галерея товара -->
-            <div class="product-gallery">
-                <div class="badge">Бестселлер</div>
-                <img src="images/blouseBlack.webp"
-                     alt="Премиум кардиган KOOSAN" class="main-image" id="mainImage">
-
-                <div class="image-thumbnails">
-                    <img src="images/blouseBlack1.webp"
-                         alt="Кардиган вид спереди" class="thumbnail active" data-image="images/blouseBlack1.webp">
-                    <img src="images/blouseBlack3.webp"
-                         alt="Кардиган вид сбоку" class="thumbnail" data-image="images/blouseBlack3.webp">
-                    <img src="images/blouseBlack2.webp"
-                         alt="Кардиган детали" class="thumbnail" data-image="images/blouseBlack2.webp">
-                    <img src="images/blouseBlack4.webp"
-                         alt="Кардиган на модели" class="thumbnail" data-image="images/blouseBlack4.webp">
-                </div>
-            </div>
-
-            <!-- Информация о товаре -->
-            <div class="product-info">
-                <h1>Премиум кардиган KOOSAN</h1>
-                <div class="product-subtitle">Хлопок | Органика | Качественная отделка</div>
-
-                <div class="price">
-                    <div class="current-price">8 990 ₽</div>
-                    <div class="original-price">12 500 ₽</div>
-                    <div class="discount">-28%</div>
+        <!-- Логотип и цитата -->
+        <div style="padding: 100px 0 80px;">
+            <div style="max-width: 800px; margin: 0 auto; position: relative;">
+                <!-- KOOSAN - поднят выше -->
+                <div style="font-size: 10.2rem;
+                           color: var(--secondary);
+                           font-weight: 700;
+                           letter-spacing: 3px;
+                           font-family: 'Playfair Display', serif;
+                           position: relative;
+                           top: -90px;
+                           line-height: 0.9;
+                           margin-bottom: 20px;">
+                    KOOSAN
                 </div>
 
-                <div class="description">
-                    <p>Элегантный кардиган премиум-класса из органического хлопка. Идеальное сочетание роскоши и комфорта для современной женщины.</p>
-                    <p>100% хлопок обеспечивает невероятную нежность, а качественная отделка и внимательное отношение к деталям делают эту вещь настоящим произведением искусства.</p>
-                </div>
-
-                <!-- Опции покупки -->
-                <div class="options">
-                    <div class="option-group">
-                        <div class="option-label">Цвет:</div>
-                        <div class="color-options">
-                            <div class="color-option color-1 active" data-color="black"></div>
-                            <div class="color-option color-2" data-color="blue"></div>
-                            <div class="color-option color-3" data-color="cream"></div>
-                        </div>
-                    </div>
-
-                    <div class="option-group">
-                        <div class="option-label">Размер:</div>
-                        <div class="size-options">
-                            <div class="size-option active" data-size="XS">XS</div>
-                            <div class="size-option" data-size="S">S</div>
-                            <div class="size-option" data-size="M">M</div>
-                            <div class="size-option" data-size="L">L</div>
-                            <div class="size-option" data-size="XL">XL</div>
-                        </div>
-                    </div>
-
-                    <div class="quantity-selector">
-                        <div class="option-label">Количество:</div>
-                        <button class="quantity-btn" id="decreaseQty">-</button>
-                        <input type="text" class="quantity-input" id="quantity" value="1" readonly>
-                        <button class="quantity-btn" id="increaseQty">+</button>
-                    </div>
-                </div>
-
-                <!-- Кнопки покупки -->
-                <div class="buy-buttons">
-                    <button class="btn btn-primary" id="addToCart">
-                        <i class="fas fa-shopping-bag"></i> Добавить в корзину
-                    </button>
-                    <button class="btn btn-secondary" id="buyNow">
-                        <i class="fas fa-bolt"></i> Купить сейчас
-                    </button>
-                </div>
-
-                <!-- Дополнительная информация -->
-                <div style="margin-top: 30px; color: var(--gray); font-size: 14px;">
-                    <p><i class="fas fa-shipping-fast" style="margin-right: 10px;"></i> Доставка по России</p>
-                    <p><i class="fas fa-undo" style="margin-right: 10px;"></i> Возврат в течение 14 дней</p>
-                    <p><i class="fas fa-award" style="margin-right: 10px;"></i> Гарантия качества 1 год</p>
-                </div>
+                <!-- Цитата -->
+                <h1 style="font-size: 2.8rem;
+                          font-style: italic;
+                          color: var(--primary);
+                          line-height: 1.4;
+                          margin-top: 0;
+                          margin-bottom: 10px;">
+                    "Кордиган из 100% органическго хлопка"
+                </h1>
             </div>
         </div>
     </div>
+</section>
+
+<!-- Информация о товаре -->
+<div class="product-info">
+    <h1>Премиум кардиган KOOSAN</h1>
+    <div class="product-subtitle">Хлопок | Органика | Качественная отделка</div>
+
+    <div class="price">
+        <div class="current-price">8 990 ₽</div>
+        <div class="original-price">12 500 ₽</div>
+        <div class="discount">-28%</div>
+    </div>
+
+    <div class="description">
+        <p>Элегантный кардиган премиум-класса из органического хлопка. Идеальное сочетание роскоши и комфорта для
+            современной женщины.</p>
+        <p>100% хлопок обеспечивает невероятную нежность, а качественная отделка и внимательное отношение к деталям
+            делают эту вещь настоящим произведением искусства.</p>
+    </div>
+
+    <!-- Опции покупки -->
+    <div class="options">
+        <div class="option-group">
+            <div class="option-label">Цвет:</div>
+            <div class="color-options">
+                <div class="color-option color-1 active" data-color="black"></div>
+                <div class="color-option color-2" data-color="blue"></div>
+                <div class="color-option color-3" data-color="cream"></div>
+            </div>
+        </div>
+
+        <div class="option-group">
+            <div class="option-label">Размер:</div>
+            <div class="size-options">
+                <div class="size-option active" data-size="XS">XS</div>
+                <div class="size-option" data-size="S">S</div>
+                <div class="size-option" data-size="M">M</div>
+                <div class="size-option" data-size="L">L</div>
+                <div class="size-option" data-size="XL">XL</div>
+            </div>
+        </div>
+
+        <div class="quantity-selector">
+            <div class="option-label">Количество:</div>
+            <button class="quantity-btn" id="decreaseQty">-</button>
+            <input type="text" class="quantity-input" id="quantity" value="1" readonly>
+            <button class="quantity-btn" id="increaseQty">+</button>
+        </div>
+    </div>
+
+    <!-- Кнопки покупки -->
+    <div class="buy-buttons">
+        <button class="btn btn-primary" id="addToCart">
+            <i class="fas fa-shopping-bag"></i> Добавить в корзину
+        </button>
+        <button class="btn btn-secondary" id="buyNow">
+            <i class="fas fa-bolt"></i> Купить сейчас
+        </button>
+    </div>
+
+    <!-- Дополнительная информация -->
+    <div style="margin-top: 30px; color: var(--gray); font-size: 14px;">
+        <p><i class="fas fa-shipping-fast" style="margin-right: 10px;"></i> Доставка по России</p>
+        <p><i class="fas fa-undo" style="margin-right: 10px;"></i> Возврат в течение 14 дней</p>
+        <p><i class="fas fa-award" style="margin-right: 10px;"></i> Гарантия качества 1 год</p>
+    </div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- Характеристики -->
@@ -839,7 +853,8 @@
                         </div>
                     </div>
                 </div>
-                <p>"Это самый мягкий кардиган, который у меня когда-либо был! Ношу его уже месяц, и он выглядит как новый. Качество просто потрясающее."</p>
+                <p>"Это самый мягкий кардиган, который у меня когда-либо был! Ношу его уже месяц, и он выглядит как
+                    новый. Качество просто потрясающее."</p>
             </div>
 
             <div class="review-card">
@@ -856,7 +871,8 @@
                         </div>
                     </div>
                 </div>
-                <p>"Заказала в желтом цвете. Сидит идеально! Очень тонкая работа, видно, что каждая деталь продумана. Теперь это мой любимый элемент гардероба."</p>
+                <p>"Заказала в желтом цвете. Сидит идеально! Очень тонкая работа, видно, что каждая деталь продумана.
+                    Теперь это мой любимый элемент гардероба."</p>
             </div>
 
             <div class="review-card">
@@ -873,7 +889,8 @@
                         </div>
                     </div>
                 </div>
-                <p>"Подарили на день рождения. Упаковка была просто шикарной! Сам кардиган еще лучше, чем на фото. Обязательно закажу еще в другом цвете."</p>
+                <p>"Подарили на день рождения. Упаковка была просто шикарной! Сам кардиган еще лучше, чем на фото.
+                    Обязательно закажу еще в другом цвете."</p>
             </div>
         </div>
     </div>
@@ -903,7 +920,8 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Рекомендуем ручную стирку в холодной воде с мягким моющим средством. Не отжимать, сушить в горизонтальном положении. Глажение при минимальной температуре.</p>
+                    <p>Рекомендуем ручную стирку в холодной воде с мягким моющим средством. Не отжимать, сушить в
+                        горизонтальном положении. Глажение при минимальной температуре.</p>
                 </div>
             </div>
 
@@ -913,7 +931,8 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Доставка по России бесплатна при любом заказе. В Москве и Санкт-Петербурге возможна доставка в день заказа. Отправляем товар в день оформления заказа.</p>
+                    <p>Доставка по России бесплатна при любом заказе. В Москве и Санкт-Петербурге возможна доставка в
+                        день заказа. Отправляем товар в день оформления заказа.</p>
                 </div>
             </div>
 
@@ -923,7 +942,8 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Да, вы можете вернуть товар в течение 14 дней с момента получения. Главное условие — сохранение товарного вида и наличие бирок.</p>
+                    <p>Да, вы можете вернуть товар в течение 14 дней с момента получения. Главное условие — сохранение
+                        товарного вида и наличие бирок.</p>
                 </div>
             </div>
         </div>
@@ -940,7 +960,8 @@
 
         <div style="max-width: 800px; margin: 0 auto; text-align: center;">
             <div style="font-size: 64px; margin-bottom: 30px;">👑</div>
-            <p style="font-size: 18px; margin-bottom: 30px;">Каждый кардиган проходит 12 этапов контроля качества. Мы даем гарантию 1 год на все изделия и бесплатный ремонт при производственном браке.</p>
+            <p style="font-size: 18px; margin-bottom: 30px;">Каждый кардиган проходит 12 этапов контроля качества. Мы
+                даем гарантию 1 год на все изделия и бесплатный ремонт при производственном браке.</p>
             <button class="btn btn-primary" style="background: var(--accent); color: var(--primary);">
                 <i class="fas fa-crown"></i> Заказать кардиган
             </button>
@@ -1096,6 +1117,8 @@
                 }
             });
         });
-    </script>
+
+
+</script>
 </body>
 </html>
